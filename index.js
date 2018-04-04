@@ -14,6 +14,11 @@ class Trie {
   }
 
   insert(word) {
+    if (typeof word !== 'string') {
+      console.error(`Expected ${word} at function insert to be a string.`)
+      return;
+    }
+
     let currentNode = this.root;
 
     for (let i = 0; i < word.length; i++) {
@@ -68,6 +73,11 @@ class Trie {
   } 
 
   populate(dataSet) {
+    if (!Array.isArray(dataSet)) {
+      console.error(`Expected argument at function populate to be an array.`)
+      return;
+    }
+
     dataSet.forEach(data => this.insert(data));
   }
 
