@@ -14,6 +14,6 @@ Because who wants to type out a full word when computers can do the work for us?
 
 
 ## Installation
-Run `npm install https://github.com/danielafcarey/autocomplete.git -S` on your command line.
+Run `npm install https://github.com/danielafcarey/autocomplete.git --save-prod` on your command line.
 
 In the file you wish to use the module in, add: `const autocomplete = require('autocomplete')`
